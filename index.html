@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday, Brother! 🎂</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SCREEN 1 : BIRTHDAY WELCOME
+    ====================================================== -->
+
+    <section
+        id="welcomeScreen"
+        class="screen welcome-screen active"
+    >
+
+        <div class="welcome-content">
+
+            <p class="small-heading">
+                A SPECIAL BIRTHDAY DELIVERY
+            </p>
+
+
+            <h1>
+                Happy Birthday,<br>
+                Brother! 🎂
+            </h1>
+
+
+            <p class="welcome-text">
+
+                It's funny how we haven't known each other
+                for very long...
+
+                <br><br>
+
+                but somehow, you've become someone
+                really special to me.
+
+            </p>
+
+
+            <button
+                id="openMailboxBtn"
+                class="main-button"
+            >
+
+                <span>
+                    Open Your Birthday Mail
+                </span>
+
+                <span class="button-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="welcome-image-container">
+
+            <div class="image-glow"></div>
+
+            <img
+                src="assets/images/mailbox.png"
+                alt="A beautiful red mailbox"
+                class="welcome-image"
+                id="mailboxImage"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 2 : BIRTHDAY MAILBOX
+    ====================================================== -->
+
+    <section
+        id="mailboxScreen"
+        class="screen mailbox-screen"
+    >
+
+        <div class="mailbox-page-header">
+
+            <p class="small-heading">
+                YOUR BIRTHDAY MAIL HAS ARRIVED
+            </p>
+
+
+            <h2>
+                A few little letters,<br>
+                just for you.
+            </h2>
+
+
+            <p>
+                Five letters.
+                Five little pieces of what I wanted
+                to tell you on your birthday.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             BIG MAILBOX
+        ================================================== -->
+
+        <div class="big-mailbox">
+
+
+            <!-- Mailbox curved top -->
+
+            <div class="mailbox-top">
+
+                <div class="mailbox-word">
+                    MAIL
+                </div>
+
+            </div>
+
+
+
+            <!-- Mailbox opening -->
+
+            <div class="mailbox-opening">
+
+                <div class="mailbox-opening-shadow"></div>
+
+
+                <div class="envelopes">
+
+
+                    <!-- =====================================
+                         LETTER 1
+                    ====================================== -->
+
+                    <button
+                        class="envelope envelope-one"
+                        data-letter="1"
+                        aria-label="Open birthday letter one"
+                    >
+
+                        <span class="envelope-number">
+                            01
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-body"></span>
+
+                        <span class="envelope-label">
+                            BIRTHDAY
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         LETTER 2
+                    ====================================== -->
+
+                    <button
+                        class="envelope envelope-two"
+                        data-letter="2"
+                        aria-label="Open birthday letter two"
+                    >
+
+                        <span class="envelope-number">
+                            02
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-body"></span>
+
+                        <span class="envelope-label">
+                            OUR BOND
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         LETTER 3
+                    ====================================== -->
+
+                    <button
+                        class="envelope envelope-three"
+                        data-letter="3"
+                        aria-label="Open birthday letter three"
+                    >
+
+                        <span class="envelope-number">
+                            03
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-body"></span>
+
+                        <span class="envelope-label">
+                            THANK YOU
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         LETTER 4
+                    ====================================== -->
+
+                    <button
+                        class="envelope envelope-four"
+                        data-letter="4"
+                        aria-label="Open birthday letter four"
+                    >
+
+                        <span class="envelope-number">
+                            04
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-body"></span>
+
+                        <span class="envelope-label">
+                            MEMORIES
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         LETTER 5
+                    ====================================== -->
+
+                    <button
+                        class="envelope envelope-five"
+                        data-letter="5"
+                        aria-label="Open final birthday letter"
+                    >
+
+                        <span class="envelope-number">
+                            05
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-body"></span>
+
+                        <span class="envelope-label">
+                            ONE LAST WISH
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MAILBOX DOOR
+            ================================================== -->
+
+            <div class="mailbox-door">
+
+
+                <div class="mailbox-label">
+
+                    <span>
+                        POST OFFICE
+                    </span>
+
+                    <span class="mail-symbol">
+                        ✉
+                    </span>
+
+                </div>
+
+
+                <div class="mailbox-handle"></div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <p class="mailbox-instruction">
+            Click a letter to open it
+        </p>
+
+
+
+        <button
+            id="backToWelcome"
+            class="back-button"
+        >
+
+            ← Back
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 3 : LETTER
+    ====================================================== -->
+
+    <section
+        id="letterScreen"
+        class="screen letter-screen"
+    >
+
+        <div class="letter-wrapper">
+
+
+            <!-- Close button -->
+
+            <button
+                id="closeLetter"
+                class="close-letter"
+                aria-label="Close letter"
+            >
+                ×
+            </button>
+
+
+
+            <div class="letter-paper">
+
+
+                <div class="letter-decoration">
+                    BIRTHDAY MAIL
+                </div>
+
+
+                <p class="letter-label">
+                    A LETTER JUST FOR YOU
+                </p>
+
+
+                <h2 id="letterTitle">
+                    Happy Birthday, Brother!
+                </h2>
+
+
+                <div
+                    id="letterContent"
+                    class="letter-content"
+                >
+                    <!-- JavaScript inserts the message here -->
+                </div>
+
+
+                <div class="letter-divider"></div>
+
+
+                <p class="letter-signature">
+
+                    With lots of love,<br>
+
+                    <strong>
+                        Your sister ❤️
+                    </strong>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
